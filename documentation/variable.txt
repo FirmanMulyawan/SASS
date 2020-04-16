@@ -1,0 +1,36 @@
+===================== Variable SASS ==========================================
+- Dengan Sass, Anda dapat menyimpan informasi dalam variabel, seperti:
+  + string
+  + angka
+  + warna
+  + boolean
+  + daftar
+  + nulls
+
+- $variablename: value;
+
+                - $myColor: red;
+
+                h1 {                     // h1 akan berwarna green
+                $myColor: green;
+                color: $myColor;
+                }
+
+                p {                      // p akan berwarna red
+                color: $myColor;
+                }
+               
+                =================================
+                =================================
+                - $myColor: red;
+
+                h1 {                               // h1 akan berwarna green
+                $myColor: green !global;  
+                color: $myColor;
+                }
+
+                p {                                // p akan berwarna green
+                color: $myColor;
+                }
+
+================================================================================

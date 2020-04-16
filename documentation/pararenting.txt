@@ -1,0 +1,39 @@
+==================== Pendahuluan SASS ====================================
+- sass bukan pengganti CSS
+- Sass memungkinkan Anda menggunakan fitur yang tidak ada di CSS, 
+  seperti variabel, aturan bersarang, mixin, impor, warisan, fungsi bawaan, dan hal-hal lainnya.
+- browser tidak mengerti kode Sass. Oleh karena itu, Anda memerlukan prosesor pra-Sass 
+  untuk mengubah kode Sass menjadi CSS standar. Proses ini disebut transpiling. Jadi, Anda perlu memberikan transpiler 
+  (semacam program) beberapa kode Sass dan kemudian mendapatkan beberapa kode CSS kembali.
+- Kiat: Transpiling adalah istilah untuk mengambil kode sumber
+  yang ditulis dalam satu bahasa dan mengubah / menerjemahkannya ke bahasa lain.
+- File Sass memiliki ekstensi file ".scss".
+- jangan gunakan untuk project kecil
+==============================================================================
+
+
+============================== cara install SASS =============================
+- sass -h (melihat help)
+- sass --version
+- https://sass-lang.com/
+- masuk terminal 
+  - Ketika menginstal Sass, kita akan dapat menjalankan sass 
+    yang dapat dieksekusi untuk mengkompilasi file .sass dan .scss ke file .css.
+- npm install -g sass
+
+==============================================================================
+
+================================== SASS ======================================
+- SASS ada dua 
+  - SASS dan SCSS
+- SCSS tetap menggunakan kurung kurawal "{}" dan titik koma ";"
+- SASS tidak membutuhkan kurung kurawal "{}" dan titik koma ";"
+  + sass diberi jarak antara selector dan property nya. 
+
+- cara penggunaan
+  - masuk ke folder CSS
+  + sass <input.scss> [output.css] (menghubungkan file sass dengan css)
+  + sass --watch contoh.scss:style.css (agar selalu terhubung/ dipantau)
+  + sass --watch library/main.scss:style.css (jika filenya dalam folder)
+- untuk keluar tekan ctrl + c
+==============================================================================

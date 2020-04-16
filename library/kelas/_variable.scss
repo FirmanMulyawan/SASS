@@ -1,0 +1,49 @@
+// =========== library ==============
+
+@font-face {
+  src: url(@../../assets/Lobster-Regular.ttf);
+  font-family: myFirstFont;
+}
+@font-face {
+  src: url(@../../assets/DancingScript-Bold.ttf);
+  font-family: mySecondFont;
+}
+
+// ==================================
+
+// ====== variabel = $ ==============
+
+$font-bersambung: myFirstFont;
+$font-asik: mySecondFont;
+$font-gede: 34px;
+$font-normal: 24px;
+$font-menu: 30px;
+$warna-verah: rgb(240, 62, 241);
+$warna-abu: grey;
+$lebar-cont: 960px;
+$tengah-x: 0 auto;
+// ==================================
+
+// ==== extend {. atau %} ===========
+%linkbiasa {
+  color: $warna-abu;
+  text-decoration: none;
+}
+
+%standar {
+  padding: 0;
+  margin: 0;
+}
+
+// ==================================
+
+// =========== mixin - include =======
+// sebuah fungsi yang bisa nerima parameter
+@mixin border-rad($radius) {
+  border-radius: $radius;
+  -ms-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+// ==================================

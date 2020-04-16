@@ -1,0 +1,55 @@
+#container {
+  width: $lebar-cont;
+  margin: $tengah-x;
+}
+#main {
+  width: 600px / $lebar-cont * 100%;
+  float: left;
+}
+#sidebar {
+  width: 360px / $lebar-cont * 100%;
+  float: left;
+}
+h1 {
+  font-family: $font-bersambung;
+  font-size: $font-gede;
+  color: $warna-verah;
+}
+p {
+  font-family: $font-asik;
+  font-size: $font-normal;
+  color: $warna-abu;
+}
+
+//nesting
+ul {
+  li {
+    display: inline-block;
+    list-style: none;
+    font-size: $font-menu;
+    a {
+      @extend %linkbiasa;
+      &:hover {
+        background-color: $warna-verah;
+      }
+    }
+  }
+}
+.button {
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+  display: inline-block;
+  @include border-rad(10px);
+  color: white;
+  text-align: center;
+}
+.suka {
+  background-color: rgb(31, 210, 222);
+}
+.standard {
+  background-color: rgb(121, 222, 31);
+}
+.emosi {
+  background-color: rgb(252, 76, 0);
+}

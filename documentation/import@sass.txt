@@ -1,0 +1,61 @@
+- Salah satu cara untuk menulis kode KERING adalah dengan menyimpan kode terkait dalam file terpisah.
+- Anda dapat membuat file kecil dengan potongan CSS untuk disertakan dalam file Sass lainnya
+- 
+
+
+@import filename;   (cara import)
+_filename;    (Sass Partials)
+
+
+            file    _colors.scss
+                        $myPink: #EE82EE;
+                        $myBlue: #4169E1;
+                        $myGreen: #8FBC8F;
+
+
+===========================================
+            file lain
+                    @import "colors";
+
+                    body {
+                    font-family: Helvetica, sans-serif;
+                    font-size: 18px;
+                    color: $myBlue;
+                    }
+
+=============================================================================
+                        file reset.scss
+                            html,
+                            body,
+                            ul,
+                            ol {
+                                margin: 0;
+                                padding: 0;
+                            }
+=============================================================================
+
+                        file standard.scss
+                            @import "reset";
+
+                                body {
+                                    font-family: Helvetica, sans-serif;
+                                    font-size: 18px;
+                                    color: red;
+                                }
+
+
+=============================================================================
+
+
+Output CSS:
+
+html, body, ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+}  

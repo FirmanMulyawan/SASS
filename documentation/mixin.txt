@@ -1,0 +1,19 @@
+- The @mixindirektif memungkinkan Anda membuat kode CSS 
+  yang akan digunakan kembali seluruh situs web.
+- Kiat pada tanda hubung dan garis bawah di Sass: Tanda hubung 
+  dan garis bawah dianggap sama. Ini berarti bahwa @mixin important-text {} 
+  dan @mixin important_text {} dianggap sebagai mixin yang sama!
+
+            @mixin important-text {
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+            border: 1px solid blue;
+            }
+
+
+            ======================
+            .danger {
+            @include important-text;
+            background-color: green;
+            }
